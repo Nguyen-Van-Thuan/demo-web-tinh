@@ -173,3 +173,89 @@ body .container {
     color: #414141;
     text-decoration: none;
 }
+.header-qc {
+    height: 40px;
+    background-color: #111;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.banner .owl-carousel img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* List category.start */
+.list-category {
+    width: 100%;
+    position: relative;
+    top: -40px;
+    z-index: 2;
+}
+
+.list-category .container {
+    height: 300px;
+    background-color: greenyellow;
+    max-width: 1300px;
+    padding: 50px 80px;
+}
+
+.list-category .container .item {
+    background-color: violet;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+/* Name Category.start */
+.name-category {
+    background-color: #e1e1e1;
+    height: 80px;
+}
+
+/* Feature Daily Deal./start */
+.feature-daily .container {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f3f4f6;
+}
+.wrap-title {
+    text-align: center;
+    padding: 20px 0;
+}
+.wrap-title h2 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.wrap-title .btn-title {
+    border: unset;
+    background-color: #000;
+    padding: 10px 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.feature-daily .item {
+    background-color: green;
+    height: 400px;
+}
+/* Feature daily current./start */
+.feature-daily-current .item {
+    margin: 50px 0;
+    height: 300px;
+    background-color: orange;
+}
+
+/* Limit time offers */
+.limit-time .item {
+    background-color: violet;
+    height: 300px;
+}
+
+/* Weekly Deals */
+.item-weekly-deals {
+    background-color: red;
+    height: 500px;
+    width: 100%;
+}
