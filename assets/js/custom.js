@@ -41,4 +41,13 @@ $(document).ready(function(){
       }
   })
 
+  //Xy ly menu mobile
+  $('.open-btn').on("click", function(){
+    //goi den class wrap-menu-mobile
+    $('.wrap-menu-mobile').css('left','0');
+  });
+  $('.close').on('click', function(){
+    $('.wrap-menu-mobile').css('left','-100%');
+  });
+
   });
