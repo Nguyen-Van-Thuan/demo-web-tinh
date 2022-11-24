@@ -16,7 +16,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -351,35 +351,34 @@ body .container {
     background-color: #fff;
     height: 400px;
 }
-
-
-
-
-
-
-/* 
-    - Kich thuoc MH: Responsive --> PC, Laptop, tablet, mobile 
-    - Responsive: 
-        + Desktop First: Kich thuoc man hinh to -> nho /////
-            (PC >> Laptop >> Tablet >> Mobile)
-        + Mobile First: ---------------------nho -> to
-            (Mobile >> Tablet >> Laptop >> PC)
-        
-*/
-/* Giao dien tren vua lam --> 1280px --> pc + desktop */
-@media screen and (max-width: 1279px) { /* Giao dien tablet xoay ngang va tablet doc*/
-    /* styles ... */
+.mobile-cart {
+    display: none;
 }
-@media screen and (max-width: 769px) { /*Giao dien tablet*/
-    .wrap-title h2 {
-        font-size: 14px;
+
+/* Responsive */
+@media screen and (max-width: 1023px) { 
+    /* 0 < (Giao dien) < 1023px */
+    .logo, .header-main-left .contact-header-left, .wrap-search, .wrap-cart {
+        display: none;
     }
-    .wrap-title .btn-title {
-        padding: 8px;
+    .mobile-cart {
+        display: block;
+        position: relative;
     }
-}
-@media screen and (max-width: 480px) { /*Mobile xoay ngang va doc*/
-    .wrap-title .btn-title {
-        padding: 23px;
+    .mobile-cart i {
+        font-size: 18px;
+    }
+    .mobile-cart span {
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        background-color: red;
+        font-size: 13px;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
     }
 }
